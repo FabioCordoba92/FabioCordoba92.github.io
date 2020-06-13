@@ -1,0 +1,362 @@
+/*Tipografía del sitio*/
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Encabezado del sitio y sus componentes*/
+.encabezado {
+  margin-top: 2%;
+  display: inline-flexbox;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  float: left;
+  margin-right: 5%;
+  padding-left: 10%;
+}
+
+.navegacion {
+  width: 100%;
+}
+
+.item-lista {
+  padding-left: 5%;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+
+.op-navegacion {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.op-navegacion::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.op-navegacion:hover::after {
+  width: 100%;
+}
+
+.op-navegacion:active {
+  background-color: #707070;
+}
+
+.pagina-activa {
+  font-weight: 700;
+  color: rgb(154, 17, 17);
+}
+
+/*-----------------------------------------------*/
+/*Cuepo de la pagina y sus componenetes*/
+.articulo-centrado {
+  text-align: center;
+}
+
+#contenido-servicios {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.seccion-servicios {
+  /*El font se pone en tamaño 0 porque deja un espacio
+  entre otros los demas elementos, se le vuelve a dar 
+  su tamaño en la clase donde se nececite*/
+  /*margin: auto;*/
+  font-size: 0;
+  display: inline-table;
+  margin-left: 5%;
+  width: 330px;
+  height: 450px;
+  box-shadow: 0px 5px 10px 2px black;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+
+.seccion-acerca-de {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  background-color: #000000a8;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 2px black;
+}
+
+.img-seccion {
+  padding: 30px 30px 30px 30px;
+  background: #000000a8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 8px #00000029;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.msj-bienvenida {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-top: 450px;
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 70px;
+  color: white;
+  text-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+
+.titulos-servicios {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Semibold 20px/27px Segoe UI;
+  font-weight: 600;
+  background: #000000a8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 8px #00000029;
+  opacity: 0.85;
+  font-size: 20px;
+}
+/*---------------------------------*/
+.titulos-acerca-de {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Semibold 20px/27px Segoe UI;
+  font-weight: 600;
+  background: #000000a8 0% 0% no-repeat padding-box;
+}
+
+#titulo-empresa {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#titulo-vision {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*--------------------------------*/
+.parrafo {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 30px;
+  color: white;
+  background: #000000a8 0% 0% no-repeat padding-box;
+}
+
+.boton-Gigante {
+  margin-top: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 37px;
+  opacity: 1;
+  font-family: Bold 20px/27px Segoe UI;
+  font-weight: 700;
+  width: 274px;
+  height: 74px;
+  color: #707070;
+  transition: 0.5s;
+}
+.boton-Gigante:hover {
+  box-shadow: 0 0 8px 2px #ffffff;
+  scale: 1.1;
+}
+
+/*-----------------------------------------------*/
+/*Pie de pagina del sitio*/
+.pie-Pagina {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 70px;
+  width: 100%;
+  height: 50px;
+}
+/*-----------------------------------------------*/
+/* Estilos para la galería*/
+#contenido-galeria {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.galeria img {
+  transition: 1s;
+  padding: 5px;
+  filter: grayscale(100%);
+  /*La medidas deben y estan en el codigo html, sin embargo no esta demas aplicarlas aca*/
+  width: 250px;
+  height: 180px;
+}
+
+.galeria img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/*-----------------------------------------------*/
+/*Fomulario de contacto*/
+
+#contenido-conctacto {
+  margin-left: 5%;
+  margin-top: 2%;
+  display: -ms-inline-flexbox;
+}
+
+.seccion-consulta {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: auto;
+  display: inline-table;
+  padding: 20px 30px 30px 30px;
+  background: #000000a8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 8px #00000029;
+  opacity: 1;
+  text-align: left;
+  border-radius: 5px;
+  min-width: 250px;
+}
+
+.titulos {
+  text-align: center;
+  background: #000000a8 0% 0% no-repeat padding-box;
+  font: bold 20px/27px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.lbl {
+  text-align: left;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  font: Semibold 15px/20px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #000000a8 0% 0% no-repeat padding-box;
+}
+
+.input_txt {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 30px;
+  font: Semibold 15px/20px Segoe UI;
+  letter-spacing: 0px;
+  color: black;
+  opacity: 1;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+}
+
+.input_txt:placeholder-shown {
+  text-align: left;
+}
+
+.botones {
+  font: Semibold 20px/27px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+  display: block;
+  text-align: center;
+  width: 101%;
+  height: 42px;
+  background: #6b6b6b 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  opacity: 1;
+  font: Bold 15px/20px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+#txt_consulta {
+  text-align: left;
+  width: 100%;
+  height: 78px;
+  resize: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.vcard {
+  margin-left: 0%;
+  margin-top: 10%;
+  margin-right: 10%;
+  padding-bottom: 10px;
+  float: right;
+  display: block;
+  text-align: right;
+}
+.maps {
+  margin-top: 5%;
+  /*Los tama;o se definen en el codigo html
+  sin emargo tambien deben de estar aqui para un
+  mejor mantenimiento*/
+  width: 650px;
+  height: 335px;
+  box-shadow: 2px 5px 8px 5px rgb(0, 0, 0, 0.5);
+}
+
+.org,
+.email,
+.street-address,
+.locality,
+.region,
+.postal-code,
+.country-name {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.email:hover {
+  transition: 1s;
+  color: rgb(153, 255, 255);
+}
+
+/*Fomulario de contacto*/
+
+#seccion-login {
+  display: block;
+  margin-top: 150px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 200px;
+  background: #000000a8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 8px #00000029;
+  opacity: 1;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+}

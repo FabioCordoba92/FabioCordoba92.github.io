@@ -1,0 +1,9 @@
+/* Aplica para background del sitio y la tipografía*/
+* {
+  margin: 0;
+  background: url(../images/Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
