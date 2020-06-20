@@ -1,119 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--El sitio no se guardara en cache-->
-    <meta http-equiv="pragma" content="no-cache" />
-    <!--hojas de estilo-->
-    <link rel="stylesheet" href="../css/background.css" />
-    <link rel="stylesheet" href="../css/componentes.css" />
-    <title>GYMBOX - QUIENES SOMOS</title>
-  </head>
 
-  <body>
-    <!--Inicia el div pagina-->
-    <div id="pagina">
-      <header class="encabezado">
-        <img class="logo" src="../images/Logo(153x42).png" alt="Logo Empresa Gymbox" width="135px" height="42px" />
-        <nav class="navegacion">
-          <ul>
-            <li class="item-lista"><a class="op-navegacion" href="index.html">PRINCIPAL</a></li>
-            <li class="item-lista"><a class="op-navegacion" href="servicios.html">SERVICIOS</a></li>
-            <li class="item-lista"><a class="op-navegacion" href="galeria.html">GALERÍA</a></li>
-            <li class="item-lista"><a class="op-navegacion" href="acerca.html">QUIENES SOMOS</a></li>
-            <li class="item-lista"><a class="op-navegacion, pagina-activa" href="contacto.html">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!--Inicia div que muestra todo el contenido de la pagina-->
-      <div id="contenido-conctacto">
-        <fieldset class="seccion-consulta">
-          <form action="" method="POST" autocomplete="off">
-            <legend class="titulos">Formulario de contacto</legend>
-            <label class="lbl" for="txt_nombre">Nombre:</label>
-            <input
-              class="input_txt"
-              id="txt_nombre"
-              type="text"
-              name="nombre"
-              placeholder="Su nombre"
-              required="required"
-              maxlength="20"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--El sitio no se guardara en cache-->
+  <meta http-equiv="pragma" content="no-cache" />
+  <!--Hojas de estilo-->
+  <link rel="stylesheet" href="../css/background.css" />
+  <link rel="stylesheet" href="../css/componentes.css" />
+  <title>GYMBOX - QUIENES SOMOS</title>
+</head>
 
-            <label class="lbl" for="txt_telefono">Teléfono:</label>
-            <input
-              class="input_txt"
-              id="txt_telefono"
-              type="number"
-              name="telefono"
-              placeholder="Su número telefónico"
-              required="required"
-              maxlength="8"
-            />
+<body>
+  <!--Inicia el div pagina-->
+  <div id="pagina">
+    <header class="encabezado">
+      <img class="logo" src="../images/Logo(153x42).png" alt="Logo de la Empresa Gymbox" width="135px" height="42px" />
+      <nav class="navegacion">
+        <ul>
+          <li class="item-lista"><a class="op-navegacion" href="index.html">PRINCIPAL</a></li>
+          <li class="item-lista"><a class="op-navegacion" href="servicios.html">SERVICIOS</a></li>
+          <li class="item-lista"><a class="op-navegacion" href="galeria.html">GALERÍA</a></li>
+          <li class="item-lista"><a class="op-navegacion" href="acerca.html">QUIENES SOMOS</a></li>
+          <li class="item-lista"><a class="op-navegacion, pagina-activa" href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Inicia div que muestra todo el contenido de la pagina-->
+    <div id="contenido-conctacto">
+      <fieldset class="seccion-consulta">
+        <form action="" method="POST" autocomplete="off">
+          <legend class="titulos">Formulario de contacto</legend>
+          <label class="lbl" for="txt_nombre">Nombre:</label>
+          <input class="input_txt" id="txt_nombre" type="text" name="nombre" placeholder="Su nombre" required="required"
+            maxlength="20" />
 
-            <label class="lbl" for="txt_email">Email:</label>
-            <input
-              class="input_txt"
-              id="txt_email"
-              type="email"
-              name="email"
-              placeholder="ejemplo@email.com"
-              required="required"
-              maxlength="20"
-            />
+          <label class="lbl" for="txt_telefono">Teléfono:</label>
+          <input class="input_txt" id="txt_telefono" type="number" name="telefono" placeholder="Su número telefónico"
+            required="required" maxlength="8" />
 
-            <label class="lbl" for="txt_asunto">Asunto:</label>
-            <input
-              class="input_txt"
-              id="txt_asunto"
-              type="text"
-              name="asunto"
-              placeholder="De que trata la consulta"
-              required="required"
-              maxlength="15"
-            />
+          <label class="lbl" for="txt_email">Email:</label>
+          <input class="input_txt" id="txt_email" type="email" name="email" placeholder="ejemplo@email.com"
+            required="required" maxlength="20" />
 
-            <label class="lbl" for="txt_consulta">Consulta:</label>
-            <textarea
-              class="input_txt"
-              id="txt_consulta"
-              name="consulta"
-              required="required"
-              maxlength="350"
-              placeholder="Escribanos en detalle su consulta aquí"
-            ></textarea>
+          <label class="lbl" for="txt_asunto">Asunto:</label>
+          <input class="input_txt" id="txt_asunto" type="text" name="asunto" placeholder="De que trata la consulta"
+            required="required" maxlength="15" />
 
-            <button class="botones" id="boton_formulario">Enviar consulta</button>
-          </form>
-        </fieldset>
-        <div class="vcard">
-          <div class="org">GYMBOX S.A</div>
-          <a class="email" href="mailto:negocios@gymboxcr.com">
-            negocios@gymboxcr.com
-          </a>
-          <div class="adr">
-            <div class="street-address">Piedra Azul</div>
-            <span class="locality">El Yas</span>, <span class="region">Cartago</span>,
-            <span class="postal-code">30202</span>
-            <span class="country-name">CR</span>
-          </div>
-          <iframe
-            class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15723.545266159059!2d-83.81803179615706!3d9.859904159680257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0d8893aeee321%3A0x32b61b39d8913c74!2sEl%20Yas%2C%20Piedra%20Azul%2C%20Cartago%20Province!5e0!3m2!1sen!2scr!4v1591981008558!5m2!1sen!2scr"
-            width="650"
-            height="335"
-            frameborder="1"
-          >
-          </iframe>
+          <label class="lbl" for="txt_consulta">Consulta:</label>
+          <textarea class="input_txt" id="txt_consulta" name="consulta" required="required" maxlength="350"
+            placeholder="Escribanos en detalle su consulta aquí"></textarea>
+
+          <button class="botones" id="boton_formulario">Enviar consulta</button>
+        </form>
+      </fieldset>
+      <!--Inicia el div que contiene el vCard-->
+      <div class="vcard">
+        <div class="org">GYMBOX S.A</div>
+        <a class="email" href="mailto:negocios@gymboxcr.com">
+          negocios@gymboxcr.com
+        </a>
+        <div class="adr">
+          <div class="street-address">Piedra Azul</div>
+          <span class="locality">El Yas</span>, <span class="region">Cartago</span>,
+          <span class="postal-code">30202</span>
+          <span class="country-name">CR</span>
         </div>
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15723.545266159059!2d-83.81803179615706!3d9.859904159680257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0d8893aeee321%3A0x32b61b39d8913c74!2sEl%20Yas%2C%20Piedra%20Azul%2C%20Cartago%20Province!5e0!3m2!1sen!2scr!4v1591981008558!5m2!1sen!2scr"
+          width="650" height="335" frameborder="1">
+        </iframe>
       </div>
-      <!--Termina el div contenido-->
-      <footer class="pie-Pagina">
-        <p>&copy; GYMBOX 2020</p>
-      </footer>
+      <!--Termina el div vCard-->
     </div>
-    <!--termina div pagina-->
-  </body>
+    <!--Termina el div contenido-->
+    <footer class="pie-Pagina">
+      <p>&copy; GYMBOX 2020</p>
+    </footer>
+  </div>
+  <!--termina div pagina-->
+</body>
+
 </html>

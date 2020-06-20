@@ -1,11 +1,12 @@
 /*Tipografía del sitio*/
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
 }
 
 /*Encabezado del sitio y sus componentes*/
 .encabezado {
-  margin-top: 2%;
+  margin-top: 2vh;
   display: inline-flexbox;
   justify-content: space-evenly;
   align-items: center;
@@ -13,7 +14,7 @@
 
 .logo {
   float: left;
-  margin-right: 5%;
+  padding-right: 5%;
   padding-left: 10%;
 }
 
@@ -29,9 +30,11 @@
 }
 
 .op-navegacion {
+  padding-top: 2%;
   text-decoration: none;
-  color: white;
+  letter-spacing: 0.2em;
   font-weight: 600;
+  color: white;
 }
 
 .op-navegacion::after {
@@ -53,6 +56,8 @@
 }
 
 .pagina-activa {
+  text-decoration: none;
+  letter-spacing: 0.2em;
   font-weight: 700;
   color: rgb(154, 17, 17);
 }
@@ -64,9 +69,7 @@
 }
 
 #contenido-servicios {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 2%;
   text-align: center;
   justify-content: center;
 }
@@ -78,7 +81,7 @@
   /*margin: auto;*/
   font-size: 0;
   display: inline-table;
-  margin-left: 5%;
+  margin: 5%;
   width: 330px;
   height: 450px;
   box-shadow: 0px 5px 10px 2px black;
@@ -106,14 +109,17 @@
 }
 
 .msj-bienvenida {
+  margin-top: 65vh;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding-top: 450px;
   text-align: center;
-  letter-spacing: 0px;
-  font-size: 70px;
+  letter-spacing: 0.2em;
+  font-size: 50px;
   color: white;
   text-shadow: 0px 3px 6px #00000029;
   opacity: 1;
+}
+
+@media only screen(max-with=1700px) {
 }
 
 .titulos-servicios {
@@ -133,9 +139,10 @@
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
-  color: #ffffff;
-  font-family: Semibold 20px/27px Segoe UI;
   font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
   background: #000000a8 0% 0% no-repeat padding-box;
 }
 
@@ -151,44 +158,46 @@
 
 /*--------------------------------*/
 .parrafo {
-  text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 30px;
-  color: white;
+  text-align: center;
+  line-height: 1.5em;
   background: #000000a8 0% 0% no-repeat padding-box;
+  color: white;
 }
 
 .boton-Gigante {
-  margin-top: 10px;
+  margin-top: 2%;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  width: 30vh;
+  height: 8vh;
+  color: #707070;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 6px 6px #00000029;
   border: 1px solid #707070;
   border-radius: 37px;
   opacity: 1;
-  font-family: Bold 20px/27px Segoe UI;
-  font-weight: 700;
-  width: 274px;
-  height: 74px;
-  color: #707070;
   transition: 0.5s;
 }
 .boton-Gigante:hover {
   box-shadow: 0 0 8px 2px #ffffff;
   scale: 1.1;
+  cursor: pointer;
 }
 
 /*-----------------------------------------------*/
 /*Pie de pagina del sitio*/
 .pie-Pagina {
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-  margin-top: 70px;
+  margin-top: 4%;
   width: 100%;
   height: 50px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  color: #ffffff;
+  opacity: 1;
 }
 /*-----------------------------------------------*/
 /* Estilos para la galería*/
@@ -291,6 +300,7 @@
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
+  cursor: pointer;
 }
 
 #txt_consulta {
@@ -340,6 +350,9 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
 }
 
+.org {
+  letter-spacing: 0.2em;
+}
 .email:hover {
   transition: 1s;
   color: rgb(153, 255, 255);
